@@ -31,6 +31,7 @@ public enum SidebarItem: String, CaseIterable, Identifiable {
     case largeOldFiles = "大文件与旧文件"
     case duplicates = "重复文件"
     case shredder = "文件粉碎"
+    case browserExtensions = "浏览器扩展"
 
     // Cleanup, declared last so the ⌘1…⌘9 shortcuts above keep their digits
     case diskHogs = "开发者磁盘占用"
@@ -67,6 +68,7 @@ public enum SidebarItem: String, CaseIterable, Identifiable {
         case .largeOldFiles: "large-old-files"
         case .duplicates: "duplicates"
         case .shredder: "shredder"
+        case .browserExtensions: "browser-extensions"
         case .diskHogs: "disk-hogs"
         case .projectJunk: "project-junk"
         case .cleanHistory: "clean-history"
@@ -99,6 +101,7 @@ public enum SidebarItem: String, CaseIterable, Identifiable {
         case .largeOldFiles: "doc.richtext"
         case .duplicates: "plus.square.on.square"
         case .shredder: "scissors"
+        case .browserExtensions: "puzzlepiece"
         case .diskHogs: "externaldrive.badge.xmark"
         case .projectJunk: "shippingbox"
         case .cleanHistory: "arrow.uturn.backward.circle"
@@ -111,7 +114,7 @@ public enum SidebarItem: String, CaseIterable, Identifiable {
         switch self {
         case .smartScan: .smartScan
         case .systemJunk, .mailAttachments, .trashBins, .projectJunk, .diskHogs, .cleanHistory: .cleanup
-        case .malwareRemoval, .privacy, .wifiNetworks, .appPermissions: .protection
+        case .malwareRemoval, .privacy, .browserExtensions, .wifiNetworks, .appPermissions: .protection
         case .optimization, .maintenance: .performance
         case .uninstaller, .unusedApps, .extensions, .updater: .applications
         case .spaceLens, .largeOldFiles, .duplicates, .shredder: .files
@@ -123,7 +126,7 @@ public enum SidebarItem: String, CaseIterable, Identifiable {
         switch self {
         case .smartScan: .main
         case .systemJunk, .mailAttachments, .trashBins, .projectJunk, .diskHogs, .cleanHistory: .cleanup
-        case .malwareRemoval, .privacy, .wifiNetworks, .appPermissions: .protection
+        case .malwareRemoval, .privacy, .browserExtensions, .wifiNetworks, .appPermissions: .protection
         case .optimization, .maintenance: .performance
         case .uninstaller, .unusedApps, .extensions, .updater: .applications
         case .spaceLens, .largeOldFiles, .duplicates, .shredder: .files

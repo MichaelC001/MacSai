@@ -189,6 +189,8 @@ struct ContentView: View {
             MalwareView()
         case .privacy:
             PrivacyView()
+        case .browserExtensions:
+            BrowserExtensionsView()
         case .wifiNetworks:
             WiFiNetworksView()
         case .appPermissions:
